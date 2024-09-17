@@ -39,12 +39,15 @@ While the services used (S3, CodePipeline) are eligible for the AWS Free Tier, i
    * Create an S3 bucket and configure it for static website hosting.
    * Upload your game files (HTML, CSS, JavaScript) to the bucket.
    * Note the S3 URL where your static website will be hosted.
+  ![static website hosting](images/Capture4.PNG)
+  ![bucketpolicy](https://github.com/Ananya1682/codepipeline-S3-memorygame/blob/master/images/Capture%205.PNG)
 
 2. Set Up AWS CodePipeline
    * Create a pipeline in AWS CodePipeline.
    * Connect the pipeline to your GitHub repository.
    * Define the build and deploy stages. Set S3 as the deployment target.
    * Every time you push changes to the GitHub repository, the CodePipeline will automatically update your game on S3.
+   ![pipeline deployment](images/Capture3.PNG)
 # How to Contribute
 Feel free to fork this repository and contribute new features (such as scoring, multiplayer, etc.) by submitting pull requests.
 
